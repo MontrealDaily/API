@@ -3,7 +3,7 @@ package fr.brde.api.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "weather_current")
+@Table(name = "CurrentWeather")
 public class CurrentWeather {
 
     private int id;

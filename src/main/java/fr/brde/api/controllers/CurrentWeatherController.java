@@ -23,4 +23,10 @@ public class CurrentWeatherController
         return this.currentWeatherService.listAllWeathers();
     }
 
+    @GetMapping("/last")
+    public CurrentWeather getLast()
+    {
+        return this.currentWeatherService.getLastWeather();
+    }
+
 }
