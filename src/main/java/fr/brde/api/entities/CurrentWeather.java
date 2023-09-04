@@ -13,6 +13,7 @@ public class CurrentWeather {
     private String lastUpdated;
     private String weatherCondition;
     private int wind; // km/h
+    private int feelslike;
 
     public CurrentWeather() {}
 
@@ -21,7 +22,8 @@ public class CurrentWeather {
                           int temp,
                           String lastUpdated,
                           String weatherCondition,
-                          int wind)
+                          int wind,
+                          int feelslike)
     {
         this.id = id;
         this.time = time;
@@ -29,6 +31,7 @@ public class CurrentWeather {
         this.lastUpdated = lastUpdated;
         this.weatherCondition = weatherCondition;
         this.wind = wind;
+        this.feelslike = feelslike;
     }
 
     @Id
@@ -93,4 +96,13 @@ public class CurrentWeather {
         this.wind = wind;
     }
 
+    public int getFeelslike()
+    {
+        return feelslike;
+    }
+
+    public void setFeelslike(int feelslike)
+    {
+        this.feelslike = feelslike;
+    }
 }
